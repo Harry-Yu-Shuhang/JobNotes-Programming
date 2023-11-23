@@ -51,7 +51,7 @@ yarn：负责资源调度。
 这部分主要还是靠自己的能力，不管用什么编程语言，能写出来就行。我一般用Python。但是也有几个常考的。
 
 ### 1.反转链表
-'''
+```
 #include <iostream>
 using namespace std;
 
@@ -86,4 +86,4 @@ ListNode* reverse(ListNode* pre,ListNode* cur){
         // cur = temp;
         return reverse(cur,temp);
     }
-'''
+```
