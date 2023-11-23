@@ -92,3 +92,16 @@ ListNode* reverse(ListNode* pre,ListNode* cur){
 split
 
 切片
+
+### 3.Linux指令
+| 功能  | 指令 |
+| ----- | --- |
+| 查看文件目录 | pwd |
+| 切换目录 | cd |
+| 创建文件夹 | mkdir |
+| 删除文件夹 | rm |
+| 移动或者重命名 | mv |
+| 查看文件内容 | cat或者more |
+| 查看网卡信息 | ifonfig |
+| 杀进程 | kill |
+| 编译程序 | gcc |
