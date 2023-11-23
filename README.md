@@ -48,3 +48,42 @@ yarn：负责资源调度。
 浅拷贝拷贝出的新对象在原始拷贝的对象的值发生变化以后，新对象的值也会发生变化，而深拷贝出的新对象则不会受到影响。
 
 ## 二、代码实战篇
+这部分主要还是靠自己的能力，不管用什么编程语言，能写出来就行。我一般用Python。但是也有几个常考的。
+
+### 1.反转链表
+'''
+#include <iostream>
+using namespace std;
+
+struct ListNode
+{
+    int val;
+    struct ListNode *next;
+};
+
+//1.非递归法反转链表
+ListNode* reverseList(ListNode* head) {
+        ListNode* temp; // 保存cur的下一个节点
+        ListNode* cur = head;
+        ListNode* pre = NULL;
+        while(cur) {
+            temp = cur->next;  // 保存一下 cur的下一个节点，因为接下来要改cur->next
+            cur->next = pre; // 翻转操作
+            // 更新pre 和 cur指针
+            pre = cur;
+            cur = temp;
+        }
+        return pre;
+    }
+
+//2.递归反转链表
+ListNode* reverse(ListNode* pre,ListNode* cur){
+        if(cur == NULL) {return pre;}
+        ListNode* temp = cur->next;
+        cur->next = pre;
+        // 可以和双指针法的代码进行对比，如下递归的写法，其实就是做了这两步
+        // pre = cur;
+        // cur = temp;
+        return reverse(cur,temp);
+    }
+'''
