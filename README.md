@@ -87,3 +87,8 @@ ListNode* reverse(ListNode* pre,ListNode* cur){
         return reverse(cur,temp);
     }
 ```
+
+### 2.Python常用函数
+split
+
+切片
