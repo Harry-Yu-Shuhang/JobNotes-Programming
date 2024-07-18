@@ -90,6 +90,15 @@ ListNode* reverse(ListNode* pre,ListNode* cur){
 
 ### 2.Python常用函数
 切片：基本语法为'sequence[start:stop:step]'。 如nums[m:] = [1, 2, 3] 即将num[m]以及它之后的元素赋值为[1,2,3]。再如，nums[::-1]则返回倒序的数组。
+'''
+#Example 1: 切片
+nums = [1,2,3,4,5,6,7,8,9]
+nums[4:]=[1,2,3]
+print(nums)
+#结果为[1, 2, 3, 4, 1, 2, 3]
+
+'''
+
 
 排序：sort 如：nums.sort(reverse = True)这就是递减排序
 
