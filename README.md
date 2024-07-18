@@ -89,9 +89,9 @@ ListNode* reverse(ListNode* pre,ListNode* cur){
 ```
 
 ### 2.Python常用函数
-split 切片
+切片：基本语法为'sequence[start:stop:step]'。 如nums[m:] = [1, 2, 3] 即将num[m]以及它之后的元素赋值为[1,2,3]。再如，nums[::-1]则返回倒序的数组。
 
-sort 排序 如：nums.sort(reverse = True)这就是递减排序
+排序：sort 如：nums.sort(reverse = True)这就是递减排序
 
 ### 3.Linux指令
 | 功能  | 指令 |
