@@ -90,6 +90,7 @@ ListNode* reverse(ListNode* pre,ListNode* cur){
 
 ### 2.Python常用函数
 split 切片
+
 sort 排序 如：nums.sort(reverse = True)这就是递减排序
 
 ### 3.Linux指令
