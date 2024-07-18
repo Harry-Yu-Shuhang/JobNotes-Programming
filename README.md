@@ -89,19 +89,38 @@ ListNode* reverse(ListNode* pre,ListNode* cur){
 ```
 
 ### 2.Python常用函数
-切片：基本语法为'sequence[start:stop:step]'。 如nums[m:] = [1, 2, 3] 即将num[m]以及它之后的元素赋值为[1,2,3]。再如，nums[::-1]则返回倒序的数组。
-'''
+切片：基本语法为'sequence[start:stop:step]'。左闭右开。 
+```
 #Example 1: 切片
 nums = [1,2,3,4,5,6,7,8,9]
 nums[4:]=[1,2,3]
 print(nums)
-#结果为[1, 2, 3, 4, 1, 2, 3]
+#结果为[1, 2, 3, 4, 1, 2, 3](把nums[4]以及之后的换成[1,2,3])
 
-'''
+nums = [1,2,3,4,5,6,7,8,9]
+nums[4:6]=[1,2,3]
+print(nums)
+#结果为[1, 2, 3, 4, 1, 2, 3, 7, 8, 9]（把nums[4]~nums[6]（左闭右开，即5，6）换成[1,2,3]）
 
+nums = [1,2,3,4,5,6,7,8,9]
+nums[4:8]=[1,2,3]
+print(nums)
+#结果为[1, 2, 3, 4, 1, 2, 3, 9]（把nums[4]~nums[8]（左闭右开，即5，6，7，8）换成[1,2,3]）
 
-排序：sort 如：nums.sort(reverse = True)这就是递减排序
+nums = [1,2,3,4,5,6,7,8,9]
+print(nums[::-2])
+#结果为[9, 7, 5, 3, 1]。从尾到头，步长-2
+```
 
+排序：sort 如：nums.sort(reverse = True)这就是递减排序.不加默认的话是递增
+
+分割：split，默认分割符为空格。
+```
+csv_text = "apple,banana,cherry,date"
+fruits = csv_text.split(',')
+print(fruits)
+#结果：['apple', 'banana', 'cherry', 'date']
+```
 ### 3.Linux指令
 | 功能  | 指令 |
 | ----- | --- |
